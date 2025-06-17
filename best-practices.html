@@ -70,7 +70,6 @@
     text-decoration: none;
 }
 
-
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: #0a0a0a;
@@ -151,7 +150,7 @@
 
         /* Main container */
         .main-container {
-            
+            max-width: 1200px;
             margin: 0 auto;
             position: relative;
             z-index: 10;
@@ -365,6 +364,7 @@
             box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
             margin-bottom: 40px;
             color: #333;
+			margin-top: 40px;
         }
 
         .content-section h2 {
@@ -469,247 +469,124 @@
     </div>
 </nav>
 
-    <!-- Animated Background -->
-    <div class="bg-animation">
-        <div class="floating-shapes">
-            <div class="shape"></div>
-            <div class="shape"></div>
-            <div class="shape"></div>
-        </div>
-    </div>
-
-    <div class="main-container">
-        
-		
-		<!-- Ad Placeholder 1 -->
+<!-- Ad Placeholder 1 -->
         <div class="ad-placeholder">
             [Advertisement Space - Replace with Google AdSense code]
         </div>
 
-        <!-- Password Generator Tool -->
-        <section class="generator-container">
-            <h2>Generate Your Secure Password</h2>
+<!-- Password Best Practices -->
+        <section class="content-section">
+            <h2>Password Best Practices for 2025</h2>
             
-            <div class="form-group">
-                <label for="length">Password Length</label>
-                <div class="range-container">
-                    <input type="range" id="length" min="4" max="128" value="16">
-                    <span class="range-value" id="lengthValue">16</span>
-                </div>
-            </div>
+            <h3>Creating Memorable Yet Secure Passwords</h3>
+            <p>While our password generator creates random, secure passwords, you might need to create memorable passwords manually. Here are expert techniques:</p>
+            
+            <ol>
+                <li><strong>Passphrase Method:</strong> Combine 4-6 unrelated words with numbers and symbols. Example: "Coffee!Train#Moon2024"</li>
+                <li><strong>Sentence Method:</strong> Take a memorable sentence and use the first letter of each word, adding numbers and symbols. "I love pizza on Friday nights!" becomes "IlpoFn!2024"</li>
+                <li><strong>Substitution Method:</strong> Replace letters in a phrase with numbers and symbols. "Password" becomes "P@55w0rd!"</li>
+            </ol>
 
-            <div class="checkbox-group">
-                <div class="checkbox-item">
-                    <input type="checkbox" id="uppercase" checked>
-                    <label for="uppercase">Uppercase Letters (A-Z)</label>
-                </div>
-                <div class="checkbox-item">
-                    <input type="checkbox" id="lowercase" checked>
-                    <label for="lowercase">Lowercase Letters (a-z)</label>
-                </div>
-                <div class="checkbox-item">
-                    <input type="checkbox" id="numbers" checked>
-                    <label for="numbers">Numbers (0-9)</label>
-                </div>
-                <div class="checkbox-item">
-                    <input type="checkbox" id="symbols" checked>
-                    <label for="symbols">Symbols (!@#$%^&*)</label>
-                </div>
-            </div>
+            <h3>Password Storage and Management</h3>
+            <p>Creating strong passwords is just the beginning. Proper password management is equally important:</p>
+            
+            <h4>Use a Password Manager</h4>
+            <p>Password managers are essential tools that generate, store, and automatically fill passwords for you. Popular options include:</p>
+            <ul>
+                <li>LastPass - Comprehensive features with free and premium options</li>
+                <li>1Password - Excellent security with family sharing features</li>
+                <li>Bitwarden - Open-source with strong security credentials</li>
+                <li>Dashlane - User-friendly with VPN included in premium plans</li>
+            </ul>
 
-            <div class="form-group">
-                <input type="checkbox" id="excludeSimilar">
-                <label for="excludeSimilar">Exclude Similar Characters (0, O, l, 1, I)</label>
-            </div>
-
-            <button class="generate-btn" id="generateBtn">Generate Secure Password</button>
-
-            <div class="password-display">
-                <span class="password-text" id="passwordText">Click "Generate Secure Password" to create your password</span>
-                <button class="copy-btn" id="copyBtn" style="display: none;">Copy</button>
-            </div>
-
-            <div class="strength-meter" id="strengthMeter" style="display: none;">
-                <div class="strength-bar">
-                    <div class="strength-fill" id="strengthFill"></div>
-                </div>
-                <div class="strength-text" id="strengthText"></div>
-            </div>
-
-            <div class="error" id="errorMsg"></div>
+            <h4>Enable Two-Factor Authentication (2FA)</h4>
+            <p>Add an extra layer of security beyond passwords. Even if your password is compromised, 2FA prevents unauthorized access. Use authenticator apps like Google Authenticator or Authy rather than SMS when possible.</p>
         </section>
-    </div>
 
-	 <!-- Ad Placeholder 2 -->
+        <!-- Ad Placeholder 4 -->
         <div class="ad-placeholder">
             [Advertisement Space - Replace with Google AdSense code]
         </div>
 
+        <!-- Common Password Mistakes -->
+        <section class="content-section">
+            <h2>Common Password Mistakes to Avoid</h2>
+            
+            <h3>The Most Dangerous Password Habits</h3>
+            <p>Even security-conscious users make critical mistakes that compromise their safety. Avoid these common pitfalls:</p>
+            
+            <h4>1. Password Reuse</h4>
+            <p>Using the same password across multiple sites is like using one key for your house, car, and office. If criminals get that key, they have access to everything. Statistics show that 65% of people reuse passwords across multiple accounts.</p>
+            
+            <h4>2. Storing Passwords Insecurely</h4>
+            <p>Never store passwords in:</p>
+            <ul>
+                <li>Plain text files on your computer</li>
+                <li>Browser password managers on shared computers</li>
+                <li>Email drafts or notes apps</li>
+                <li>Physical notes near your computer</li>
+                <li>Unencrypted cloud storage</li>
+            </ul>
+            
+            <h4>3. Sharing Passwords</h4>
+            <p>Avoid sharing passwords through insecure channels like email, text messages, or verbal communication. If you must share access, use secure password sharing features in password managers or create temporary access that can be revoked.</p>
+            
+            <h4>4. Ignoring Security Warnings</h4>
+            <p>When services notify you of suspicious login attempts or recommend password changes, act immediately. These warnings often indicate that your credentials may have been compromised.</p>
+        </section>
 
-    <script>
-        // Wait for DOM to be fully loaded
-        document.addEventListener('DOMContentLoaded', function() {
-            const lengthSlider = document.getElementById('length');
-            const lengthValue = document.getElementById('lengthValue');
-            const passwordText = document.getElementById('passwordText');
-            const copyBtn = document.getElementById('copyBtn');
-            const strengthMeter = document.getElementById('strengthMeter');
-            const strengthFill = document.getElementById('strengthFill');
-            const strengthText = document.getElementById('strengthText');
-            const errorMsg = document.getElementById('errorMsg');
+        <!-- Ad Placeholder 5 -->
+        <div class="ad-placeholder">
+            [Advertisement Space - Replace with Google AdSense code]
+        </div>
 
-            // Update length display
-            lengthSlider.addEventListener('input', function() {
-                lengthValue.textContent = this.value;
-            });
+        <!-- Business Password Security -->
+        <section class="content-section">
+            <h2>Business Password Security</h2>
+            
+            <h3>Protecting Your Organization</h3>
+            <p>Businesses face unique password security challenges. A single compromised password can lead to devastating data breaches, financial losses, and reputation damage.</p>
+            
+            <h4>Enterprise Password Policies</h4>
+            <p>Implement comprehensive password policies that include:</p>
+            <ul>
+                <li>Minimum length requirements (12+ characters)</li>
+                <li>Regular password rotation schedules</li>
+                <li>Multi-factor authentication for all systems</li>
+                <li>Password complexity requirements</li>
+                <li>Account lockout policies after failed attempts</li>
+            </ul>
+            
+            <h4>Employee Training</h4>
+            <p>Regular security awareness training helps employees understand password security importance and recognize phishing attempts, social engineering attacks, and other threats that target passwords.</p>
+            
+            <h4>Privileged Account Management</h4>
+            <p>Administrative and privileged accounts require extra protection through dedicated password management solutions, regular audits, and strict access controls.</p>
+        </section>
 
-            // Add event listeners
-            document.getElementById('generateBtn').addEventListener('click', generatePassword);
-            document.getElementById('copyBtn').addEventListener('click', copyPassword);
+        <!-- Ad Placeholder 6 -->
+        <div class="ad-placeholder">
+            [Advertisement Space - Replace with Google AdSense code]
+        </div>
 
-            function generatePassword() {
-                errorMsg.textContent = '';
-                
-                const length = parseInt(lengthSlider.value);
-                const includeUppercase = document.getElementById('uppercase').checked;
-                const includeLowercase = document.getElementById('lowercase').checked;
-                const includeNumbers = document.getElementById('numbers').checked;
-                const includeSymbols = document.getElementById('symbols').checked;
-                const excludeSimilar = document.getElementById('excludeSimilar').checked;
-
-                // Check if at least one character type is selected
-                if (!includeUppercase && !includeLowercase && !includeNumbers && !includeSymbols) {
-                    errorMsg.textContent = 'Please select at least one character type.';
-                    return;
-                }
-
-                let charset = '';
-                
-                if (includeUppercase) {
-                    charset += excludeSimilar ? 'ABCDEFGHJKLMNPQRSTUVWXYZ' : 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-                }
-                if (includeLowercase) {
-                    charset += excludeSimilar ? 'abcdefghijkmnopqrstuvwxyz' : 'abcdefghijklmnopqrstuvwxyz';
-                }
-                if (includeNumbers) {
-                    charset += excludeSimilar ? '23456789' : '0123456789';
-                }
-                if (includeSymbols) {
-                    charset += '!@#$%^&*()_+-=[]{}|;:,.<>?';
-                }
-
-                let password = '';
-                
-                // Ensure at least one character from each selected type
-                const types = [];
-                if (includeUppercase) types.push(excludeSimilar ? 'ABCDEFGHJKLMNPQRSTUVWXYZ' : 'ABCDEFGHIJKLMNOPQRSTUVWXYZ');
-                if (includeLowercase) types.push(excludeSimilar ? 'abcdefghijkmnopqrstuvwxyz' : 'abcdefghijklmnopqrstuvwxyz');
-                if (includeNumbers) types.push(excludeSimilar ? '23456789' : '0123456789');
-                if (includeSymbols) types.push('!@#$%^&*()_+-=[]{}|;:,.<>?');
-
-                // Add one character from each type
-                for (let type of types) {
-                    password += type.charAt(Math.floor(Math.random() * type.length));
-                }
-
-                // Fill the rest with random characters
-                for (let i = password.length; i < length; i++) {
-                    password += charset.charAt(Math.floor(Math.random() * charset.length));
-                }
-
-                // Shuffle the password
-                password = password.split('').sort(() => Math.random() - 0.5).join('');
-
-                passwordText.textContent = password;
-                copyBtn.style.display = 'block';
-                
-                // Calculate and display strength
-                calculateStrength(password);
-            }
-
-            function calculateStrength(password) {
-                let score = 0;
-                let feedback = '';
-
-                // Length scoring
-                if (password.length >= 8) score += 25;
-                if (password.length >= 12) score += 25;
-                if (password.length >= 16) score += 15;
-
-                // Character variety scoring
-                if (/[a-z]/.test(password)) score += 10;
-                if (/[A-Z]/.test(password)) score += 10;
-                if (/[0-9]/.test(password)) score += 10;
-                if (/[^A-Za-z0-9]/.test(password)) score += 15;
-
-                // Determine strength level
-                if (score < 30) {
-                    feedback = 'Weak';
-                    strengthFill.className = 'strength-fill strength-weak';
-                } else if (score < 60) {
-                    feedback = 'Fair';
-                    strengthFill.className = 'strength-fill strength-fair';
-                } else if (score < 90) {
-                    feedback = 'Good';
-                    strengthFill.className = 'strength-fill strength-good';
-                } else {
-                    feedback = 'Strong';
-                    strengthFill.className = 'strength-fill strength-strong';
-                }
-
-                strengthFill.style.width = score + '%';
-                strengthText.textContent = `Strength: ${feedback} (${score}/100)`;
-                strengthMeter.style.display = 'block';
-            }
-
-            function copyPassword() {
-                const password = passwordText.textContent;
-                
-                // Check if clipboard API is available
-                if (navigator.clipboard && window.isSecureContext) {
-                    navigator.clipboard.writeText(password).then(() => {
-                        showCopySuccess();
-                    }).catch(() => {
-                        fallbackCopyTextToClipboard(password);
-                    });
-                } else {
-                    fallbackCopyTextToClipboard(password);
-                }
-            }
-
-            function fallbackCopyTextToClipboard(text) {
-                const textArea = document.createElement('textarea');
-                textArea.value = text;
-                textArea.style.position = 'fixed';
-                textArea.style.left = '-999999px';
-                textArea.style.top = '-999999px';
-                document.body.appendChild(textArea);
-                textArea.focus();
-                textArea.select();
-                
-                try {
-                    document.execCommand('copy');
-                    showCopySuccess();
-                } catch (err) {
-                    console.error('Could not copy text: ', err);
-                    alert('Unable to copy to clipboard. Please select and copy the password manually.');
-                }
-                
-                document.body.removeChild(textArea);
-            }
-
-            function showCopySuccess() {
-                copyBtn.textContent = 'Copied!';
-                copyBtn.classList.add('copied');
-                setTimeout(() => {
-                    copyBtn.textContent = 'Copy';
-                    copyBtn.classList.remove('copied');
-                }, 2000);
-            }
-
-            // Generate initial password when page loads
-            generatePassword();
-        });
-    </script>
+        <!-- Technical Security Information -->
+        <section class="content-section">
+            <h2>Technical Password Security</h2>
+            
+            <h3>Understanding Password Attacks</h3>
+            <p>Knowledge of attack methods helps you create better defenses. Common password attack techniques include:</p>
+            
+            <h4>Brute Force Attacks</h4>
+            <p>Attackers systematically try every possible password combination. Modern computers can test millions of passwords per second, which is why length and complexity are crucial.</p>
+            
+            <h4>Dictionary Attacks</h4>
+            <p>These attacks use common passwords, dictionary words, and known password patterns. This is why avoiding predictable passwords is essential.</p>
+            
+            <h4>Credential Stuffing</h4>
+            <p>Attackers use stolen password databases from previous breaches to try the same credentials on multiple sites. This highlights the importance of unique passwords for each account.</p>
+            
+            <h3>Password Hashing and Storage</h3>
+            <p>When services store passwords properly, they use cryptographic hashing functions like bcrypt, scrypt, or Argon2. These make it computationally expensive to crack passwords even if databases are compromised.</p>
+        </section>
 </body>
 </html>
